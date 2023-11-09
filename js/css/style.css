@@ -28,7 +28,7 @@ body {
 }
 
 /* Style the video itself */
-.vid img {
+.vid iframe {
     object-fit: cover; /* Cover the entire container */
     width: 100%;
     height: 100%;
