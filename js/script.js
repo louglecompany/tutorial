@@ -1,35 +1,77 @@
-// Select buttons
-var buttons = document.querySelectorAll('.read_button');
+// Adiciona as classes 'a' e 'b' após 2 segundos
+setTimeout(function () {
+    document.getElementById('a').classList.add('a');
+    document.getElementById('b').classList.add('b');
 
-// Add click event to each button
-buttons.forEach(function (button) {
-    button.addEventListener('click', function () {
-        // Select the card associated with the button
-        var card = button.parentElement;
+    // Adiciona a classe 'b-hidden' à div B após a transição
+    setTimeout(function () {
+        document.getElementById('b').classList.add('b-hidden');
+    }, 2000);
 
-        // Add/Remove Class Active
-        card.classList.toggle('active1');
+    // Oculta as bolinhas brancas do carregamento após 2 segundos
+    setTimeout(function () {
+        $('.loader div').css('display', 'none');
+    }, 100);
 
-        if (card.classList.contains('active1')) {
-            // Change button text if it has the class active
-            button.textContent = 'Ler menos';
-        } else {
-            // Change button text if it doesn't have the class active
-            button.textContent = 'Ler mais';
-        }
-    });
+    // Adiciona as classes 'show' e 'hidden' ao texto após a transição
+    $('.texto p').css('display', 'block'); // Exibe o texto
+    $('.texto').fadeIn(10).css('display', 'flex');
+    $('.texto p').animate({ fontSize: '0px' }, 10);
+
+    // Oculta o texto após a animação
+    setTimeout(function () {
+        $('.texto').css('display', 'none');
+    }, 2300);
+
+}, 2000); // Reduzi o tempo para 1 segundo para que o texto seja exibido imediatamente
+
+// script.js
+document.addEventListener("DOMContentLoaded", function() {
+    // Seu código existente para carregamento da página
+
+    // Após o carregamento, adicione o código para controlar a visibilidade da .direita
+    var direitaElement = document.querySelector('.direita');
+
+    function showElement() {
+        direitaElement.style.opacity = 1;
+    }
+
+    // Exemplo: Aplicar showElement após 2 segundos
+    setTimeout(showElement, 3000);
 });
 
-        // Esta função cria um novo reprodutor de vídeo do YouTube
-        function onYouTubeIframeAPIReady() {
-            var player = new YT.Player('player', {
-                height: '315',
-                width: '560',
-                videoId: 'ID_DO_SEU_VÍDEO',
-                playerVars: {
-                    controls: 0,  // Oculta os controles do reprodutor
-                    modestbranding: 1,  // Oculta o logotipo do YouTube
-                    showinfo: 0  // Oculta o título do vídeo e informações do uploader
-                }
-            });
-        }
+// script.js
+document.addEventListener("DOMContentLoaded", function() {
+    var perfeitoElement = document.querySelector('.perfeito');
+
+    function showElement() {
+        perfeitoElement.style.top = "-100px";
+    }
+
+    // Exemplo: Aplicar showElement após 2 segundos
+    setTimeout(showElement, 2500);
+});
+
+// script.js
+document.addEventListener("DOMContentLoaded", function() {
+    var botoesElement = document.querySelector('.botoes');
+
+    function showElement() {
+        botoesElement.style.top = "500px";
+    }
+
+    // Exemplo: Aplicar showElement para os botões após 2 segundos
+    setTimeout(showElement, 2500);
+});
+
+// script.js
+document.addEventListener("DOMContentLoaded", function() {
+    var menuElement = document.querySelector('.menu');
+
+    function showElement() {
+        menuElement.style.top = "48%";
+    }
+
+    // Exemplo: Aplicar showElement para o menu após 2 segundos
+    setTimeout(showElement, 2000);
+});
