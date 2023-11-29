@@ -48,7 +48,11 @@ opacity: 1;
 height: auto;
 }
 }
-
+html, body{
+    width: 100%;
+    height: 100vh;
+    background-color: #f8f8f8;
+}
 
 .texto.show {
 position: absolute;
@@ -105,25 +109,39 @@ white-space: nowrap;
 }
 
 .direita {
-    background-color: #333;
+    background-color: rgb(91, 91, 91);
     width: 20%;
     height: 100vh;
-    right: 0;
+    right: 10%;
     position: absolute;
     top: 0;
     opacity: 0; /* Inicia com opacidade 0 para não ser visível */
     transition: opacity 3s ease; /* Adapte a duração conforme necessário */
 }
 
+.bloco {
+    width: 200px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+}
+
 .menu {
-    color: #333;
+    color: #ffffff;
     font-family:'Leelawadee UI Semilight';
-    right: 13%;
+    right: 6%;
     position: absolute;
-    top: -500px; /* Inicia o menu fora do campo visual */
+    top: -700px; /* Inicia o menu fora do campo visual */
     z-index: 2;
     transition: top 1s ease; /* Adiciona uma transição suave para a propriedade 'top' */
     
+}
+
+.item {
+    background-color: #333;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
 }
 
 .menu h2 {
@@ -132,6 +150,7 @@ white-space: nowrap;
     font-size: 30px;
     font-weight: 1px;
     color: aliceblue;
+    overflow: hidden;    
 }
 
 
@@ -209,6 +228,9 @@ white-space: nowrap;
 
 
   }
+
+
+
 
 
 
