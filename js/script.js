@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var perfeitoElement = document.querySelector('.perfeito');
 
     function showElement() {
-        perfeitoElement.style.top = "-100px";
+        perfeitoElement.style.top = "0px";
     }
 
     // Exemplo: Aplicar showElement após 2 segundos
@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var botoesElement = document.querySelector('.botoes');
 
     function showElement() {
-        botoesElement.style.top = "500px";
+        botoesElement.style.top = "600px";
     }
 
     // Exemplo: Aplicar showElement para os botões após 2 segundos
@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var menuElement = document.querySelector('.menu');
 
     function showElement() {
-        menuElement.style.top = "48%";
+        menuElement.style.top = "25%";
     }
 
     // Exemplo: Aplicar showElement para o menu após 2 segundos
