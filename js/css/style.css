@@ -1,156 +1,215 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap');
-
-/** General **/
 * {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
     padding: 0;
     box-sizing: border-box;
+    margin: 0;
+    transition: all 2s ease;
 }
 
-body {
+
+#a {
+    background-color: rgb(53, 53, 53);
+    height: 50vh;
+    top: 0;
+    position: relative;
+}
+
+#b {
+    background-color: rgb(53, 53, 53);
+    height: 50vh;
+    position: relative;
+    bottom: 0;
+}
+
+/* Efeito de transição */
+#a.a {
+    top: -50vh;
+}
+
+#b.b {
+    bottom: -50vh;
+}
+
+.texto p {
+color: rgb(87, 87, 87);
+font-size: 0px;
+z-index: 999;
+display: none; /* Começa escondido */
+animation: fadeIn 2s ease;
+
+}
+
+@keyframes fadeIn {
+from {
+opacity: 0;
+height: 0;
+}
+to {
+opacity: 1;
+height: auto;
+}
+}
+
+
+.texto.show {
+position: absolute;
+right: 50%; /* Alterado de 34% para 50% */
+top: 49%;
+transform: translateX(50%); /* Adicionado para centralizar */
+font-family: Arial, Helvetica, sans-serif;
+white-space: nowrap;
+}
+
+
+/* Nova classe para esconder a div B após a transição */
+.b-hidden {
+    display: none;
+}
+
+.loader {
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 130vh;
-   
+    top: 50%;
+    left: 45%;
 }
 
-/* Add styles to the video container */
-.vid {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1; /* Place the video behind other content */
-    
+.loader div {
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    z-index: 1;
+    animation: anim 2s infinite linear;
+    animation-delay: calc(-0.3s * var(--i));
+    transform: translateY(5px);
+    margin: 0.2em;
 }
 
-/* Style the video itself */
-.vid iframe {
-    object-fit: cover; /* Cover the entire container */
-    width: 100%;
-    height: 100%;
-   
-}
-
-@keyframes animacao-degrade {
-
-    0%{
-        background-position-x:0%;
+@keyframes anim {
+    0%, 100% {
+        transform: translateY(5px);
     }
-    100%{
-        background-position-x:100%;
+    50% {
+        transform: translateY(-40px);
     }
 }
 
-
-iframe{
-
-    border-radius: 5px;
-    width: 515px;
-    height: 280px;
-    align-items: center;
-    
+@keyframes anim2 {
+    0%, 100% {
+        transform: rotate(-10deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
 }
 
-/** Card **/
-.card, .card2, .card3{
-    display: flex;
-    flex-direction: column;
-    margin: 40px;
-    max-width: 550px;
-    padding: 17px;
-    text-align: justify;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.389);
-    position: relative;
-    border-radius: 15px;
-    border: 2px solid rgb(255, 255, 255);
-    opacity: 0.8;
-    background-color: transparent;
-
-}
-
-
-.card::before, .card2::before,  .card3::before{
-    content: '';
-    position: absolute;
-    top: 0;
+.direita {
+    background-color: #333;
+    width: 20%;
+    height: 100vh;
     right: 0;
-}
-
-/** Icon **/
-.icon {
-    margin-bottom: 20px;
-
-}
-
-
-
-/** Content **/
-.content, .content2, .content3 {
-    height: 200px;
-    overflow: hidden;
-    position: relative;
-}
-
-.content::before, .content2::before,  .content3::before  {
-    content: '';
     position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 120px;
-    background: linear-gradient(transparent, #858585d1);
+    top: 0;
+    opacity: 0; /* Inicia com opacidade 0 para não ser visível */
+    transition: opacity 3s ease; /* Adapte a duração conforme necessário */
 }
 
-.content h3, .content2 h3,  .content3 h3 {
-    text-align: center;
-    margin-bottom: 15px;
+.menu {
+    color: #333;
+    font-family:'Leelawadee UI Semilight';
+    right: 13%;
+    position: absolute;
+    top: -500px; /* Inicia o menu fora do campo visual */
+    z-index: 2;
+    transition: top 1s ease; /* Adiciona uma transição suave para a propriedade 'top' */
+    
+}
+
+.menu h2 {
+    margin-bottom: 100px;
+    font-family: 'Corbel Light';
     font-size: 30px;
-    position: relative;
-    color: rgb(255, 255, 255);
+    font-weight: 1px;
+    color: aliceblue;
 }
 
-.content h3::before, .content2 h3::before, .content3 h3::before {
-    content: '';
-    position: absolute;
-    height: 2px;
-    width: 40px;
-    background-color: transparent;
-    bottom: 4px;
-    border-radius: 100px;
-}
 
-.content p, .content2 p, .content3 p {
-    color: #ffffff;
+.perfeito {
+    position: fixed;
+    color: #333;
+    margin-left: 100px;
+    top: -500px; /* Inicia o elemento fora do campo visual */
+    transition: top 1s ease; /* Adiciona uma transição suave para a propriedade 'top' */
 }
+  
+  .container.hidden {
+    display: none; /* Esconde o elemento com a classe 'container'. */
+  }
 
-/** Read More/Less Button **/
-.read_button{
+  .container {
+    display: block;
+  }
+
+  .botoes {
+    text-align: right;
+    position: fixed;
+    top: -500px; /* Inicia os botões fora do campo visual */
+    margin-left: 96px;
+    transition: top 1s ease; /* Adiciona uma transição suave para a propriedade 'top' */
+}
+  
+  
+  /* Estilização para os botões dentro da classe "botoes" */
+  .botoes button {
+    font-family: "Segoe UI Black"; /* Use a fonte personalizada com alternativa genérica */
+    background-color: #d8c200;
+    color: #333333da; /* Cor do texto branca */
     border: none;
-    padding: 10px;
-    border-radius: 2px;
-    margin-top: 15px;
-    background-color: rgb(255, 255, 255);
-    color: rgb(129, 0, 0);
-    font-weight: bold;
     cursor: pointer;
-    font-size: 16px;
-    transition: all 0.2s ease-in-out;
-}
+    padding: 8px 20px;
+    display: block; /* Faz com que os botões ocupem toda a largura disponível */
+    transform: translateY(-5px); /* Move o botão para cima ao passar o mouse */
+    box-shadow: 0px 5px 10px #00000094; /* Adiciona uma sombra */
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s; /* Adiciona transições suaves */
+  
+    /* Efeito 3D */
+    perspective: 1000px; /* Define a perspectiva para criar o efeito 3D */
+  }
+  
+  
+  .botoes button:hover {
+    transform: translateY(-10px) translateZ(10px); /* Move o botão para cima e para frente */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra mais pronunciada */
+  }
+  
 
-.read_button:hover {
-    background-color: rgb(255, 255, 255);
-    color: rgb(255, 0, 0);
-    transition: all 0.2s ease-in-out;
-}
+  
+@font-face {
+    font-family: 'GeosansLight'; /* Dê um nome à sua fonte */
+    src: url('/entre/oceano/afundo/fonts/GeosansLight.ttf') format('woff2'),
+         url('/entre/oceano/afundo/fonts/GeosansLight.ttf') format('woff');
+    /* Inclua todos os formatos que você tem disponíveis */
+  }
+  
+  h5 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 50px;
+    margin-top: 350px;
+    margin-bottom: 40px;
 
-/** Active **/
-.card.active1 .content, .card2.active1 .content2, .card3.active1 .content3 {
-    height: auto;
-}
+  }
+  
+  
+  p {
+  
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 22px;
+    font-weight: 10px;
 
-.card.active1 .content::before, .card2.active1 .content2::before, .card3.active1 .content3::before {
-    visibility: hidden;
-}
+
+  }
+
+
+
+
