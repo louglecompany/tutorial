@@ -241,11 +241,10 @@ white-space: nowrap;
 
 
 /* Adaptação para telas menores */
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 600px) {
     .direita {
       width: 100%; /* Mude a largura para ocupar toda a largura da tela */
       right: 0;
-      color: #d8c200;
     }
   
     .menu {
@@ -256,6 +255,39 @@ white-space: nowrap;
       top: 0; /* Mude a posição inicial para o topo */
     }
   }
+  
+  /* Adaptação para telas médias */
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .direita {
+      width: 30%; /* Mude a largura para ocupar 30% da largura da tela */
+      right: 5%;
+    }
+  
+    .menu {
+      top: 0; /* Mude a posição inicial para o topo */
+    }
+  
+    .botoes {
+      top: 0; /* Mude a posição inicial para o topo */
+    }
+  }
+  
 
+/* Adaptação para telas menores */
+@media only screen and (max-width: 450px) {
+    .direita {
+      width: 100%; /* Mude a largura para ocupar toda a largura da tela */
+      right: 0;
+      background-color: #d8c200;
+    }
+  
+    .menu {
+      top: 0; /* Mude a posição inicial para o topo */
+    }
+  
+    .botoes {
+      top: 0; /* Mude a posição inicial para o topo */
+    }
+  }
 
 
