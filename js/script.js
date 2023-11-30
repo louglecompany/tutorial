@@ -52,26 +52,52 @@ document.addEventListener("DOMContentLoaded", function() {
     setTimeout(showElement, 2500);
 });
 
-// script.js
 document.addEventListener("DOMContentLoaded", function() {
     var botoesElement = document.querySelector('.botoes');
 
-    function showElement() {
-        botoesElement.style.top = "600px";
+    function ajustarPosicaoTop() {
+        // Verificar a largura da tela
+        var larguraDaTela = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+        // Se a largura da tela for menor ou igual a 1024 pixels, ajustar o top para 200px
+        if (larguraDaTela <= 1024) {
+            botoesElement.style.top = "420px";
+        } else {
+            // Caso contrário, manter o top como 600px
+            botoesElement.style.top = "600px";
+        }
     }
 
     // Exemplo: Aplicar showElement para os botões após 2 segundos
-    setTimeout(showElement, 2500);
+    setTimeout(function() {
+        ajustarPosicaoTop();
+
+        // Adicionar um ouvinte de redimensionamento para ajustar a posição top quando a tela for redimensionada
+        window.addEventListener('resize', ajustarPosicaoTop);
+    }, 2000);
 });
 
-// script.js
 document.addEventListener("DOMContentLoaded", function() {
     var menuElement = document.querySelector('.menu');
 
-    function showElement() {
-        menuElement.style.top = "25%";
+    function ajustarPosicaoTop() {
+        // Verificar a largura da tela
+        var larguraDaTela = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+        // Se a largura da tela for menor ou igual a 1024 pixels, ajustar o top para 80%
+        if (larguraDaTela <= 1024) {
+            menuElement.style.top = "70%";
+        } else {
+            // Caso contrário, ajustar o top para 25%
+            menuElement.style.top = "25%";
+        }
     }
 
-    // Exemplo: Aplicar showElement para o menu após 2 segundos
-    setTimeout(showElement, 2000);
+    // Exemplo: Aplicar ajustarPosicaoTop para o menu após 2 segundos
+    setTimeout(function() {
+        ajustarPosicaoTop();
+
+        // Adicionar um ouvinte de redimensionamento para ajustar a posição top quando a tela for redimensionada
+        window.addEventListener('resize', ajustarPosicaoTop);
+    }, 2000);
 });
