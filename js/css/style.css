@@ -275,19 +275,33 @@ white-space: nowrap;
 
 /* Adaptação para telas menores */
 @media only screen and (max-width: 450px) {
+    
+    body{
+        height: 150vh;
+    }
+
     .direita {
       width: 100%; /* Mude a largura para ocupar toda a largura da tela */
-      right: 0;
-      background-color: #d8c200;
+      bottom: 0;
+
     }
   
+    .item{
+
+        bottom: 0;
+    }
+
+    .perfeito{
+
+        top: 0;
+    }
+
     .menu {
-      top: 0; /* Mude a posição inicial para o topo */
+      bottom: 0; /* Mude a posição inicial para o topo */
     }
   
     .botoes {
       top: 0; /* Mude a posição inicial para o topo */
     }
   }
-
 
