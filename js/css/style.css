@@ -108,6 +108,16 @@ white-space: nowrap;
     }
 }
 
+.logo img {
+  opacity: 0.2;
+  left: 25%;
+  top: 15%;
+  position: absolute;
+}
+
+
+
+
 .direita {
     background-color: rgb(91, 91, 91);
     width: 20%;
@@ -228,10 +238,6 @@ white-space: nowrap;
 
 
   }
-
-
-
-
 
 
 
