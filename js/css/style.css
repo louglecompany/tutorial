@@ -350,38 +350,40 @@ html, body{
 
 
 @media only screen and (max-width: 600px) {
-
-
     .direita {
         display: none;
-
     }
 
-    h5{
-
-        margin-top: 150px;
-        font-size: 25px;
-
-
-    }
-    
-    p{
-
-        font-size: 10px;
-    }
-    .menu{
-
-        right: 5%;
-
-
+    .direita.visivel {
+        display: block;
+        text-align: right;
     }
 
-    .logo img{
-
-        width: 150px;
-        height: 150px;
-        left: 0;
+    .menu {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: white; /* Adapte a cor de fundo conforme necessário */
+        z-index: 1;
     }
 
+    .menu.aberto {
+        display: block;
+    }
 
+    /* Estilize o botão como desejado */
+    #botaoMenu {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .direita.visivel #botaoMenu {
+        display: none; /* Esconder o botão quando o menu está aberto */
+    }
 }
