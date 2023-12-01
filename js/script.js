@@ -100,10 +100,13 @@ document.addEventListener("DOMContentLoaded", function() {
     }, 2000);
 });
 
+
 document.addEventListener("DOMContentLoaded", function() {
     var botaoMenu = document.getElementById('botaoMenu');
     var menuElement = document.querySelector('.menu');
     var direitaElement = document.querySelector('.direita');
+
+    console.log(botaoMenu, menuElement, direitaElement); // Verifique no console se os elementos foram encontrados
 
     botaoMenu.addEventListener('click', function() {
         menuElement.classList.toggle('aberto');
