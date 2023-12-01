@@ -100,3 +100,13 @@ document.addEventListener("DOMContentLoaded", function() {
     }, 2000);
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+    var botaoMenu = document.getElementById('botaoMenu');
+    var menuElement = document.querySelector('.menu');
+    var direitaElement = document.querySelector('.direita');
+
+    botaoMenu.addEventListener('click', function() {
+        menuElement.classList.toggle('aberto');
+        direitaElement.classList.toggle('visivel');
+    });
+});
