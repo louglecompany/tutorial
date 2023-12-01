@@ -26,6 +26,34 @@ document.addEventListener("DOMContentLoaded", function() {
         direitaElement.style.opacity = 1;
     }
 
+// Adiciona as classes 'a' e 'b' após 2 segundos
+setTimeout(function () {
+    document.getElementById('a').classList.add('a');
+    document.getElementById('b').classList.add('b');
+
+    // Adiciona a classe 'b-hidden' à div B após a transição
+    setTimeout(function () {
+        document.getElementById('b').classList.add('b-hidden');
+    }, 2000);
+
+    // Oculta as bolinhas brancas do carregamento após 2 segundos
+    setTimeout(function () {
+        $('.loader div').css('display', 'none');
+    }, 100);
+
+}, 2000); // Reduzi o tempo para 1 segundo para que o texto seja exibido imediatamente
+
+// script.js
+document.addEventListener("DOMContentLoaded", function() {
+    // Seu código existente para carregamento da página
+
+    // Após o carregamento, adicione o código para controlar a visibilidade da .direita
+    var direitaElement = document.querySelector('.direita');
+
+    function showElement() {
+        direitaElement.style.opacity = 1;
+    }
+
     // Exemplo: Aplicar showElement após 2 segundos
     setTimeout(showElement, 3000);
 });
