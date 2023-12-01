@@ -71,7 +71,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 2000);
 });
 
-
 document.addEventListener("DOMContentLoaded", function() {
     var menuElement = document.querySelector('.menu');
 
@@ -79,14 +78,18 @@ document.addEventListener("DOMContentLoaded", function() {
         // Verificar a largura da tela
         var larguraDaTela = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
-        // Se a largura da tela for menor ou igual a 1024 pixels, ajustar o top para 80%
-        if (larguraDaTela <= 1440) {
+        // Se a largura da tela for menor ou igual a 600 pixels, ajustar o top para 0%
+        if (larguraDaTela <= 600) {
+            menuElement.style.top = "80%";
+        } else if (larguraDaTela <= 1440) {
+            // Se a largura da tela for menor ou igual a 1440 pixels, ajustar o top para 43%
             menuElement.style.top = "43%";
         } else {
             // Caso contrário, ajustar o top para 25%
             menuElement.style.top = "25%";
         }
     }
+
 
     // Exemplo: Aplicar ajustarPosicaoTop para o menu após 2 segundos
     setTimeout(function() {
@@ -96,3 +99,4 @@ document.addEventListener("DOMContentLoaded", function() {
         window.addEventListener('resize', ajustarPosicaoTop);
     }, 2000);
 });
+
