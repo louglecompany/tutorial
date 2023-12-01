@@ -398,21 +398,36 @@ h4{
         display: block;
     }
 
+
+
     /* Estilize o botão como desejado */
     #botaoMenu {
         display: block; /* Certifica-se de que o botão é exibido inicialmente */
-        background-color: #4CAF50;
-        color: white;
+        background-color: #d8c200;
+        color: #333333da; /* Cor do texto branca */
         padding: 10px;
-        border: none;
         cursor: pointer;
         right: 10px;
+        border: none;
         top: 10px;
         position: absolute;
-    }
+        transform: translateY(-5px); /* Move o botão para cima ao passar o mouse */
+        box-shadow: 0px 5px 10px #00000094; /* Adiciona uma sombra */
+        transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s; /* Adiciona transições suaves */
+    /* Efeito 3D */
+    perspective: 1000px; /* Define a perspectiva para criar o efeito 3D */
+  }
+  
+  
+  .botoesMenu button:hover {
+    transform: translateY(-10px) translateZ(10px); /* Move o botão para cima e para frente */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra mais pronunciada */
+  }
+  
 
     .nokia{
         display: block;
+        transition: top 1s ease; /* Adiciona uma transição suave para a propriedade 'top' */
     }
 
     /* Ocultar o botão quando o menu está aberto */
@@ -457,6 +472,7 @@ h4{
         margin-bottom: 10px;
         font-family: 'Nunito Sans', sans-serif;
         text-align: center;
-        display:block;
+        display: block;
     }
 }
+
