@@ -32,6 +32,10 @@
     bottom: -50vh;
 }
 
+.nokia{
+    display: none;
+}
+
 .texto p {
 color: rgb(242, 0, 0);
 font-size: 0px;
@@ -292,6 +296,10 @@ html, body{
         right: 7%;
 
     }
+    
+    .nokia{
+        display: none;
+    }
 
     
 }
@@ -318,6 +326,10 @@ html, body{
 
     }
 
+    
+    .nokia{
+        display: none;
+    }
 }
 
 
@@ -345,6 +357,10 @@ html, body{
 
     }
 
+    .nokia{
+        display: none;
+    }
+
 }
 
 
@@ -355,7 +371,6 @@ html, body{
     }
 
     .direita.visivel {
-        display: block;
         text-align: right;
     }
 
@@ -376,6 +391,7 @@ html, body{
 
     /* Estilize o botão como desejado */
     #botaoMenu {
+        display: block; /* Certifica-se de que o botão é exibido inicialmente */
         background-color: #4CAF50;
         color: white;
         padding: 10px;
@@ -383,7 +399,8 @@ html, body{
         cursor: pointer;
     }
 
-    .direita.visivel #botaoMenu {
-        display: none; /* Esconder o botão quando o menu está aberto */
+    /* Ocultar o botão quando o menu está aberto */
+    .menu.aberto #botaoMenu {
+        display: none;
     }
 }
