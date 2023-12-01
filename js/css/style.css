@@ -91,6 +91,9 @@ html, body{
     margin: 0.2em;
 }
 
+h4{
+    display: none;
+}
 
 @keyframes anim {
     0%, 100% {
@@ -244,6 +247,9 @@ html, body{
 
   }
   
+  h3{
+    display: none;
+  }
   
   p {
   
@@ -417,16 +423,18 @@ html, body{
     h5 {
 
         font-size: 27px;
+        display: none;
     }
     
 
     .perfeito{
-        margin-left: 10px;
+        margin-left: 18%;
     }
 
     p{
         font-size: 18px;
         margin-bottom: 10px;
+        display: none;
     }
 
     .logo img{
@@ -435,5 +443,19 @@ html, body{
         height: 100px;
     }
 
-}
+    h4{
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 27px;
+        margin-top: 200px;
+        display: block;
+        text-align: center;
 
+    }
+
+    h3{
+        font-size: 20px;
+        margin-bottom: 10px;
+        font-family: 'Nunito Sans', sans-serif;
+        text-align: center;
+    }
+}
