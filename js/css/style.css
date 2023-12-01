@@ -308,6 +308,7 @@ html, body{
 
         margin-top: 200px;
         font-size: 52px;
+        color: #ffe600;
 
     }
 
@@ -346,3 +347,41 @@ html, body{
 
 }
 
+
+
+@media only screen and (max-width: 600px) {
+
+
+    .direita {
+        display: none;
+
+    }
+
+    h5{
+
+        margin-top: 150px;
+        font-size: 25px;
+
+
+    }
+    
+    p{
+
+        font-size: 10px;
+    }
+    .menu{
+
+        right: 5%;
+
+
+    }
+
+    .logo img{
+
+        width: 150px;
+        height: 150px;
+        left: 0;
+    }
+
+
+}
