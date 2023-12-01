@@ -399,6 +399,10 @@ html, body{
         cursor: pointer;
     }
 
+    
+    .nokia{
+        display: block;
+    }
     /* Ocultar o botão quando o menu está aberto */
     .menu.aberto #botaoMenu {
         display: none;
