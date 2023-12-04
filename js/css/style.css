@@ -402,13 +402,13 @@ h4{
 
     #botaoMenu {
         display: none; /* Inicia oculto */
-        background-color: #d8c200;
-        color: #333333da;
+        background-color: #333;
+        color: #ffffff;
         padding: 10px;
         cursor: pointer;
-        right: 10px;
+        right: 20px;
         border: none;
-        top: 10px;
+        top: 20px;
         position: absolute;
         transform: translateY(-5px);
         box-shadow: 0px 5px 10px #00000094;
