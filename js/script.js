@@ -122,7 +122,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Exemplo: Ocultar botão por 2 segundos
     setTimeout(function() {
         botaoMenu.style.display = 'block'; // ou 'inline' ou 'inline-block' dependendo do seu layout
-    }, 2000);
+    }, 3000);
 
     // Adiciona o evento de clique
     botaoMenu.addEventListener('click', function() {
