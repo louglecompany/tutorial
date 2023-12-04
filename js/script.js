@@ -114,13 +114,14 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+
 document.addEventListener("DOMContentLoaded", function() {
     var botaoMenu = document.getElementById('botaoMenu');
 
     // Exemplo: Ocultar botão por 2 segundos
     setTimeout(function() {
         botaoMenu.style.display = 'block'; // ou 'inline' ou 'inline-block' dependendo do seu layout
-    }, 3200);
+    }, 2000);
 
     // Adiciona o evento de clique
     botaoMenu.addEventListener('click', function() {
