@@ -374,8 +374,6 @@ h4{
 
 
 
-
-
 @media only screen and (max-width: 600px) {
     .direita {
         display: none;
@@ -475,7 +473,6 @@ h4{
     }
 
     
-    
 #a {
     background-color: rgb(53, 53, 53);
     height: 50vh;
@@ -504,13 +501,13 @@ h4{
 .loader div {
     background: rgb(255, 255, 255);
     border-radius: 50%;
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     z-index: 1;
-    animation: anim 3s infinite linear;
+    animation: anim 2s infinite linear;
     animation-delay: calc(-0.3s * var(--i));
     transform: translateY(5px);
-    margin: 1em;
+    margin: 0.2em;
 }
 
 }
