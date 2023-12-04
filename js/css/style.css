@@ -374,6 +374,8 @@ h4{
 
 
 
+
+
 @media only screen and (max-width: 600px) {
     .direita {
         display: none;
@@ -474,5 +476,45 @@ h4{
         text-align: center;
         display: block;
     }
+
+    
+#a {
+    background-color: rgb(53, 53, 53);
+    height: 50vh;
+    top: 0;
+    position: relative;
 }
+
+#b {
+
+    background-color: rgb(53, 53, 53);
+    height: 50vh;
+    position: relative;
+    bottom: 0;
+}
+
+.loader {
+
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 30%;
+}
+
+.loader div {
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    z-index: 1;
+    animation: anim 2s infinite linear;
+    animation-delay: calc(-0.3s * var(--i));
+    transform: translateY(5px);
+    margin: 0.2em;
+}
+
+}
+
 
