@@ -478,6 +478,7 @@ h4{
     }
 
     
+    
 #a {
     background-color: rgb(53, 53, 53);
     height: 50vh;
@@ -500,21 +501,19 @@ h4{
     justify-content: center;
     align-items: center;
     top: 50%;
-    left: 37%;
+    left: 30%;
 }
 
 .loader div {
     background: rgb(255, 255, 255);
     border-radius: 50%;
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     z-index: 1;
-    animation: anim 2s infinite linear;
+    animation: anim 3s infinite linear;
     animation-delay: calc(-0.3s * var(--i));
     transform: translateY(5px);
-    margin: 0.2em;
+    margin: 1em;
 }
 
 }
-
-
