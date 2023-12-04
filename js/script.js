@@ -53,10 +53,12 @@ document.addEventListener("DOMContentLoaded", function () {
         if (larguraDaTela <= 1280) {
             botoesElement.style.top = "500px";
         }
+
         // Se a largura da tela estiver entre 1280 e 1440 pixels, ajustar o top para 1000px
         else if (larguraDaTela > 1280 && larguraDaTela <= 1440) {
             botoesElement.style.top = "500px";
         } else {
+            
             // Caso contrário, manter o top como 0px
             botoesElement.style.top = "600px";
         }
@@ -113,7 +115,6 @@ document.addEventListener("DOMContentLoaded", function() {
         direitaElement.classList.toggle('visivel');
     });
 });
-
 
 document.addEventListener("DOMContentLoaded", function() {
     var botaoMenu = document.getElementById('botaoMenu');
