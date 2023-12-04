@@ -518,3 +518,11 @@ h4{
 }
 
 }
+
+
+@media only screen and (max-width: 430px) {
+    .botoes{
+        margin-left:30%;
+
+    }
+}
