@@ -420,8 +420,11 @@ h4{
         transform: translateY(-10px) translateZ(10px);
         box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
     }
-  
 
+    .botoes button {
+        background-color: #333;
+        color: #ffffff;
+    }
     .nokia{
         display: block;
         transition: top 1s ease; /* Adiciona uma transição suave para a propriedade 'top' */
