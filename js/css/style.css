@@ -422,7 +422,7 @@ h4{
     }
 
     .botoes{
-        margin-left:20%;
+        margin-left:30%;
 
     }
     .botoes button {
@@ -520,9 +520,9 @@ h4{
 }
 
 
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 400px) {
     .botoes{
-        margin-left:30%;
+        margin-left:20%;
 
     }
 }
