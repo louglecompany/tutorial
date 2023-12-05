@@ -374,7 +374,7 @@ h4{
 
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width:400px) and (max-width: 600px) {
     .direita {
         display: none;
     }
@@ -521,7 +521,7 @@ h4{
 }
 
 
-@media only screen and (min-width: 200px) and (max-width:380px) {
+@media only screen and (min-width: 200px) and (max-width:300px) {
     .botoes{
         margin-left:20%;
 
@@ -533,7 +533,7 @@ h4{
         margin-top: 200px;
         display: block;
         text-align: center;
-        margin-left: 5%;
+        margin-left: 1%;
     }
 
     h3{
@@ -542,7 +542,35 @@ h4{
         font-family: 'Nunito Sans', sans-serif;
         text-align: center;
         display: block;
-        margin-left: 5%;
+        margin-left: 1%;
     }
 
 }
+
+
+@media only screen and (min-width: 300px) and (max-width:400px) {
+    .botoes{
+        margin-left:20%;
+
+    }
+
+        h4{
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 27px;
+        margin-top: 200px;
+        display: block;
+        text-align: center;
+        margin-left: 15%;
+    }
+
+    h3{
+        font-size: 20px;
+        margin-bottom: 10px;
+        font-family: 'Nunito Sans', sans-serif;
+        text-align: center;
+        display: block;
+        margin-left: 15%;
+    }
+
+}
+
