@@ -274,7 +274,6 @@ h4{
 
 
 
-
   @media only screen and (max-width: 1440px) {
     .direita {
         width: 9%;
@@ -379,6 +378,8 @@ h4{
 
     .direita {
         display: none;
+        width: 300px;
+        right: 0;
     }
 
     .direita.visivel {
@@ -387,13 +388,20 @@ h4{
 
     .menu {
         display: none;
-        position: fixed;
-        top: 0;
-        right: 0;
-        width: 100%;
-        height: 100%;
-        background-color: white; /* Adapte a cor de fundo conforme necessário */
+        position: absolute;
+        margin-top: 120px;
+        right: 80px;
         z-index: 1;
+    }
+
+    .menu h2{
+        font-size: 20px;
+    }
+
+    .item{
+        width: 120px;
+        height: 40px;
+
     }
 
     .menu.aberto {
@@ -424,19 +432,13 @@ h4{
     }
 
     .botoes{
-        margin-left:26%;
+        margin-left:22%;
 
     }
-    
     .botoes button {
         background-color: #333;
         color: #ffffff;
-        padding: 12px 18px
-    }
-
-    .botaoEndereco {
-
-        font-size:30px;
+        padding: 12px 40px;
     }
     .nokia{
         display: block;
@@ -477,7 +479,7 @@ h4{
         margin-top: 200px;
         display: block;
         text-align: center;
-        left: 5%;
+        margin-left: 5%;
     }
 
     h3{
@@ -486,7 +488,7 @@ h4{
         font-family: 'Nunito Sans', sans-serif;
         text-align: center;
         display: block;
-
+        margin-left: 5%;
     }
 
        
@@ -533,16 +535,17 @@ h4{
 @media only screen and (min-width: 200px) and (max-width:300px) {
     .botoes{
         margin-left:20%;
+        
 
     }
 
-        .botoes button {
-        background-color: #333;
-        color: #ffffff;
+    
+    .botoes button{
 
+        padding: 12px 40px;
     }
 
-    h4{
+        h4{
         font-family: 'Nunito Sans', sans-serif;
         font-size: 27px;
         margin-top: 200px;
@@ -557,12 +560,7 @@ h4{
         font-family: 'Nunito Sans', sans-serif;
         text-align: center;
         display: block;
-
-    }
-
-        .botaoEndereco {
-
-        font-size: 30px;
+        margin-left: 50%;
     }
 
 }
@@ -573,7 +571,13 @@ h4{
     .botoes{
 
         margin-left:20%;
+        padding: 12px 40px;
 
+    }
+
+    .botoes button{
+
+        padding: 12px 40px;
     }
 
     h4 {
@@ -583,7 +587,7 @@ h4{
         margin-top: 200px;
         display: block;
         text-align: center;
-        left: 0%;
+        left: 5%;
 
     }
 
@@ -594,17 +598,8 @@ h4{
         font-family: 'Nunito Sans', sans-serif;
         text-align: center;
         display: block;
-    }
+        margin-left: 5%;
 
-        .botoes button {
-        background-color: #333;
-        color: #ffffff;
-
-    }
-
-        .botaoEndereco {
-
-        font-size:30px;
     }
 
 }
