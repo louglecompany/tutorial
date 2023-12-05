@@ -108,11 +108,16 @@ document.addEventListener("DOMContentLoaded", function() {
     var menuElement = document.querySelector('.menu');
     var direitaElement = document.querySelector('.direita');
 
-    console.log(botaoMenu, menuElement, direitaElement); // Verifique no console se os elementos foram encontrados
-
     botaoMenu.addEventListener('click', function() {
         menuElement.classList.toggle('aberto');
         direitaElement.classList.toggle('visivel');
+
+        // Adicione o código para definir display: block se .direita tem a classe visivel
+        if (direitaElement.classList.contains('visivel')) {
+            direitaElement.style.display = 'block';
+        } else {
+            direitaElement.style.display = 'none';
+        }
     });
 });
 
