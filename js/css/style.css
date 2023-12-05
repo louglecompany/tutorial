@@ -431,9 +431,13 @@ h4{
     .botoes button {
         background-color: #333;
         color: #ffffff;
-        padding: 20px 50px;
+        padding: 12px 40px;
     }
-    
+
+    .botaoEndereco {
+
+        font-size: 20px;
+    }
     .nokia{
         display: block;
         transition: top 1s ease; /* Adiciona uma transição suave para a propriedade 'top' */
