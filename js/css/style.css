@@ -468,7 +468,7 @@ h4{
         margin-top: 200px;
         display: block;
         text-align: center;
-        margin-left:7%;
+        margin-left: 5%;
     }
 
     h3{
@@ -477,7 +477,7 @@ h4{
         font-family: 'Nunito Sans', sans-serif;
         text-align: center;
         display: block;
-        margin-left:7%;
+        margin-left: 5%;
     }
 
     
@@ -526,4 +526,23 @@ h4{
         margin-left:20%;
 
     }
+
+        h4{
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 27px;
+        margin-top: 200px;
+        display: block;
+        text-align: center;
+        margin-left: 5%;
+    }
+
+    h3{
+        font-size: 20px;
+        margin-bottom: 10px;
+        font-family: 'Nunito Sans', sans-serif;
+        text-align: center;
+        display: block;
+        margin-left: 5%;
+    }
+
 }
