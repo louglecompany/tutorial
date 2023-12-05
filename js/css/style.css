@@ -274,6 +274,7 @@ h4{
 
 
 
+
   @media only screen and (max-width: 1440px) {
     .direita {
         width: 9%;
@@ -374,7 +375,8 @@ h4{
 
 
 
-@media only screen (max-width: 600px) {
+@media only screen and (max-width: 600px) {
+
     .direita {
         display: none;
     }
@@ -480,43 +482,43 @@ h4{
         margin-left: 5%;
     }
 
-    
-#a {
-    background-color: rgb(53, 53, 53);
-    height: 50vh;
-    top: 0;
-    position: relative;
-}
-
-#b {
-
-    background-color: rgb(53, 53, 53);
-    height: 50vh;
-    position: relative;
-    bottom: 0;
-}
-
-.loader {
-
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 50%;
-    left: 34%;
-}
-
-.loader div {
-    background: rgb(255, 255, 255);
-    border-radius: 50%;
-    width: 25px;
-    height: 25px;
-    z-index: 1;
-    animation: anim 2s infinite linear;
-    animation-delay: calc(-0.3s * var(--i));
-    transform: translateY(5px);
-    margin: 0.2em;
-}
+       
+   #a {
+       background-color: rgb(53, 53, 53);
+       height: 50vh;
+       top: 0;
+       position: relative;
+   }
+   
+   #b {
+   
+       background-color: rgb(53, 53, 53);
+       height: 50vh;
+       position: relative;
+       bottom: 0;
+   }
+   
+   .loader {
+   
+       position: absolute;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       top: 50%;
+       left: 34%;
+   }
+   
+   .loader div {
+       background: rgb(255, 255, 255);
+       border-radius: 50%;
+       width: 25px;
+       height: 25px;
+       z-index: 1;
+       animation: anim 2s infinite linear;
+       animation-delay: calc(-0.3s * var(--i));
+       transform: translateY(5px);
+       margin: 0.2em;
+   }
 
 }
 
@@ -549,28 +551,33 @@ h4{
 
 
 @media only screen and (min-width: 300px) and (max-width:400px) {
+
     .botoes{
+
         margin-left:20%;
 
     }
 
-        h4{
+    h4 {
+
         font-family: 'Nunito Sans', sans-serif;
         font-size: 27px;
         margin-top: 200px;
         display: block;
         text-align: center;
-        margin-left: 10%;
+        left: 5%;
+
     }
 
-    h3{
+    h3 {
+
         font-size: 20px;
         margin-bottom: 10px;
         font-family: 'Nunito Sans', sans-serif;
         text-align: center;
         display: block;
-        margin-left: 10%;
+        margin-left: 5%;
+
     }
 
 }
-
