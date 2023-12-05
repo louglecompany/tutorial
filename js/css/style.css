@@ -427,10 +427,13 @@ h4{
         margin-left:28%;
 
     }
+    
     .botoes button {
         background-color: #333;
         color: #ffffff;
+        padding: 12px 40px;
     }
+    
     .nokia{
         display: block;
         transition: top 1s ease; /* Adiciona uma transição suave para a propriedade 'top' */
@@ -529,7 +532,13 @@ h4{
 
     }
 
-        h4{
+        .botoes button {
+        background-color: #333;
+        color: #ffffff;
+        padding: 12px 40px;
+    }
+
+    h4{
         font-family: 'Nunito Sans', sans-serif;
         font-size: 27px;
         margin-top: 200px;
@@ -576,6 +585,12 @@ h4{
         font-family: 'Nunito Sans', sans-serif;
         text-align: center;
         display: block;
+    }
+
+        .botoes button {
+        background-color: #333;
+        color: #ffffff;
+        padding: 12px 40px;
     }
 
 }
