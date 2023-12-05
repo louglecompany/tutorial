@@ -563,6 +563,23 @@ h4{
         margin-left: 50%;
     }
 
+    .menu {
+        display: none;
+        position: absolute;
+        margin-top: 80px;
+        right: 80px;
+        z-index: 1;
+    }
+
+    .menu h2{
+        font-size: 20px;
+    }
+
+    .item{
+        width: 120px;
+        height: 40px;
+
+
 }
 
 
@@ -601,5 +618,22 @@ h4{
         margin-left: 5%;
 
     }
+
+    .menu {
+        display: none;
+        position: absolute;
+        margin-top: 80px;
+        right: 80px;
+        z-index: 1;
+    }
+
+    .menu h2{
+        font-size: 20px;
+    }
+
+    .item{
+        width: 120px;
+        height: 40px;
+
 
 }
