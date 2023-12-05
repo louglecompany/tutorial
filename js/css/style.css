@@ -544,7 +544,7 @@ h4{
         font-family: 'Nunito Sans', sans-serif;
         text-align: center;
         display: block;
-        margin-left: 0%;
+        left: 0%;
     }
 
 }
@@ -565,7 +565,7 @@ h4{
         margin-top: 200px;
         display: block;
         text-align: center;
-        left: 5%;
+        left: 0%;
 
     }
 
@@ -576,8 +576,7 @@ h4{
         font-family: 'Nunito Sans', sans-serif;
         text-align: center;
         display: block;
-        margin-left: 0%;
-
+        margin-left: 30%;
     }
 
 }
