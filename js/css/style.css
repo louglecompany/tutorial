@@ -521,7 +521,7 @@ h4{
 }
 
 
-@media only screen and (max-width: 400px) {
+@media only screen and (min-width: 200px) and (max-width:380px) {
     .botoes{
         margin-left:20%;
 
