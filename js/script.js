@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         // Se a largura da tela for menor ou igual a 600 pixels, ajustar o top para 0%
         if (larguraDaTela <= 600) {
-            menuElement.style.top = "80%";
+            menuElement.style.top = "10%";
         } else if (larguraDaTela <= 1440) {
             // Se a largura da tela for menor ou igual a 1440 pixels, ajustar o top para 43%
             menuElement.style.top = "43%";
