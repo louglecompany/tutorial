@@ -424,19 +424,19 @@ h4{
     }
 
     .botoes{
-        margin-left:28%;
+        margin-left:26%;
 
     }
     
     .botoes button {
         background-color: #333;
         color: #ffffff;
-        padding: 12px 40px;
+
     }
 
     .botaoEndereco {
 
-        font-size: 20px;
+        font-size:30px;
     }
     .nokia{
         display: block;
@@ -562,7 +562,7 @@ h4{
 
         .botaoEndereco {
 
-        font-size: 20px;
+        font-size: 30px;
     }
 
 }
@@ -604,7 +604,7 @@ h4{
 
         .botaoEndereco {
 
-        font-size: 20px;
+        font-size:30px;
     }
 
 }
