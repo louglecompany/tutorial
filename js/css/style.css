@@ -379,8 +379,9 @@ h4{
 
     .direita {
         display: none;
-        width: 300px;
+        width: 100%;
         right: 0;
+        color: black;
     }
 
     .direita.visivel {
