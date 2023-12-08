@@ -112,14 +112,17 @@ document.addEventListener("DOMContentLoaded", function() {
         menuElement.classList.toggle('aberto');
         direitaElement.classList.toggle('visivel');
 
-        // Adicione o código para definir display: block se .direita tem a classe visivel
-        if (direitaElement.classList.contains('visivel')) {
-            direitaElement.style.display = 'block';
-        } else {
-            direitaElement.style.display = 'none';
-        }
+        // Altera o texto do botão
+        botaoMenu.textContent = menuElement.classList.contains('aberto') ? 'Fechar Menu' : 'Abrir Menu';
+
+        // Adiciona/remova a classe fecharMenu conforme o estado do menu
+        botaoMenu.classList.toggle('fecharMenu', menuElement.classList.contains('aberto'));
+
+        // Use a propriedade CSS display diretamente para mostrar/ocultar .direita
+        direitaElement.style.display = direitaElement.classList.contains('visivel') ? 'block' : 'none';
     });
 });
+
 
 document.addEventListener("DOMContentLoaded", function() {
     var botaoMenu = document.getElementById('botaoMenu');
