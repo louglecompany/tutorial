@@ -540,6 +540,16 @@ h4{
     align-items: center;
    }
 
+        /* Estilos específicos para o botão quando o menu está aberto */
+    #botaoMenu.fecharMenu {
+        
+        background-color: transparent;
+        border: 1px solid white;
+        width: 130px; 
+
+
+    }
+
 }
 
 
@@ -607,6 +617,16 @@ h4{
         width: 200px;
         height: 150px;
     }
+        /* Estilos específicos para o botão quando o menu está aberto */
+    #botaoMenu.fecharMenu {
+        
+        background-color: transparent;
+        border: 1px solid white;
+        width: 130px; 
+
+
+    }
+
 
 }
 
@@ -670,6 +690,16 @@ h4{
         background-color:transparent;
         border: 1px solid white;
         border-radius: 0px;
+
+    }
+
+        /* Estilos específicos para o botão quando o menu está aberto */
+    #botaoMenu.fecharMenu {
+        
+        background-color: transparent;
+        border: 1px solid white;
+        width: 130px; 
+
 
     }
 
