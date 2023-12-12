@@ -1,7 +1,7 @@
 /* RESPONSIVO - CLASSE .LOCAL *//*////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 401px) and (max-width: 600px) {
 
 
     html,body{
@@ -11,7 +11,7 @@
     }
 
     #localone {
-        min-width: 89%;
+        width: 87%;
         height: 65vh;
         left: 4%;
         display: block;
@@ -116,8 +116,115 @@
     }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (min-width: 200px) and (max-width: 400px) {
+
+    html,body{
+
+        height: 200vh;
+
+    }
+
+    #localone {
+        width: 87%;
+        height: 65vh;
+        left: 4%;
+        display: block;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+
+    }
 
 
+
+
+    h1{
+
+
+        margin-bottom: 60px;
+        font-size: 18px;
+        text-align: center;       
+
+    }
+
+    .ab h1{
+
+        top: 40%;
+        margin-left:15%;
+    }
+
+    
+    .ac h1{
+
+        top: 21%;
+        margin-left:21%;
+    }
+
+    
+    .ad h1{
+
+        top: 51%;
+        margin-left:23%;
+    }
+
+
+    .ae h1{
+
+        top: 10%;
+        margin-left:17%;
+    }
+    
+    .ab p{
+
+        top: 10%;
+        left:8%;
+        width: 99%;
+    }
+
+    
+    .ac p{
+
+        top: 33%;
+        left:4%;
+        width: 99%;
+    }
+
+    
+    .ad p{
+
+        top: 55%;
+        left:2%;
+    }
+
+
+    .ae p{
+
+        top: 78%;
+        left:30%;
+    }
+
+    
+    /* CLASSE .BO *//* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+    .bloco{
+
+        display: none;
+    }
+
+    .fafa{
+        display: none;
+    }
+
+    button{
+
+        display: none;
+        
+    }
+
+    h2{
+        display: none;
+    }
 
 }
