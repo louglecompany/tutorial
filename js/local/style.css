@@ -126,7 +126,7 @@
 
     #localone {
         width: 92%;
-        height: 65vh;
+        height: 50vh;
         left: 4%;
         display: block;
         flex-direction: row;
@@ -178,7 +178,7 @@
     .ab p{
 
         top: 10%;
-        left:8%;
+        left:11%;
         width: 99%;
     }
 
@@ -186,7 +186,7 @@
     .ac p{
 
         top: 33%;
-        left:4%;
+        left:5%;
         width: 99%;
     }
 
@@ -194,7 +194,7 @@
     .ad p{
 
         top: 55%;
-        left:2%;
+        left:4%;
     }
 
 
