@@ -151,5 +151,5 @@ document.addEventListener("DOMContentLoaded", function() {
         var botaoEndereco = document.getElementById("botaoEndereco");
         botaoEndereco.addEventListener("click", function() {
             // Redirecionar para a página "./local"
-            window.location.href = "./js/local/index.html";
+            window.location.href = "./js/local/vid/index.html";
         });
