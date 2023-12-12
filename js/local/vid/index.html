@@ -16,13 +16,22 @@
             height: 170vh;
         }
 
-        video {
-            width: 31%;
-            height: 40vh;
-            margin-top: 20%;
-            margin-left: 60%;
+        /* Estilo para o container do vídeo e do iframe */
+        .a {
+            width: 30%;
+            height: 30vh;
+            top: 50%;
+            left: 60%;
             position: absolute;
+            overflow: hidden;
+            z-index: 1;
+        }
 
+        /* Estilo para o iframe dentro do container */
+        .a iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
         }
 
         .cax{
@@ -160,31 +169,32 @@
   <div class="cax"></div>
 
   <img src="./g.png" alt="">
-    <!-- Adicione o vídeo usando a tag <video> -->
-        <!-- Adicione o vídeo usando a tag <video> -->
-            <video id="meuVideo" width="100%" controls>
-                <source src="./Registro de Imóveis de Campo Largo - Google Maps - Google Chrome 2023-12-05 09-52-36.mp4" type="video/mp4">
+            <!-- Container para o vídeo e o iframe -->
+            <div class="a" id="meuVideo">
+                <!-- Adicione o vídeo usando a tag <iframe> -->
+                <iframe src="https://drive.google.com/file/d/1Q9Tg17AgxRRyNzTNqfa6HJVm9uCWHA7e/preview" allow="autoplay"></iframe>
                 Seu navegador não suporta o elemento de vídeo.
-            </video>
+            </div>
+
 
     <script>
-        // Função para colocar o vídeo em tela cheia
+        // Função para colocar o contêiner do vídeo em tela cheia
         function toggleFullScreen() {
-            var video = document.getElementById("meuVideo");
+            var videoContainer = document.getElementById("meuVideo");
 
             if (!document.fullscreenElement) {
-                video.requestFullscreen();
+                videoContainer.requestFullscreen();
             } else {
                 document.exitFullscreen();
             }
         }
 
-        // Adicionar um ouvinte de evento para o clique no botão
+        // Adicionar um ouvinte de evento para o clique no botão "Assistir agora"
         var botaoAssistir = document.getElementById("botaoAssistir");
         botaoAssistir.addEventListener("click", toggleFullScreen);
 
-                // Função para rolar para o final da página
-                function rolarParaBaixo() {
+        // Função para rolar para o final da página
+        function rolarParaBaixo() {
             window.scrollTo({
                 top: document.body.scrollHeight,
                 behavior: 'smooth'
@@ -195,3 +205,4 @@
 </div>
 </body>
 </html>
+
