@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartório Campo Largo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            background-color: #333;
+            height: 170vh;
+        }
+
+        video {
+            width: 31%;
+            height: 40vh;
+            margin-top: 20%;
+            margin-left: 60%;
+            position: absolute;
+
+        }
+
+        .cax{
+
+            margin-top: 4%;
+            margin-left: 56%;
+            position: absolute;
+            z-index: 2;
+            opacity: 1;
+            width: 38%;
+            height: 80vh;
+            background-color: black;
+            border-radius: 10px;
+
+        }
+
+        .local {
+            width: 40%;
+            height: 70vh;
+            left: 3%;
+            background-color: rgb(25, 25, 25);
+            border-radius: 20px;
+            position: absolute;
+            margin-top: 47%;
+
+        }
+
+        h2 {
+            color: aliceblue;
+            top: 30%;
+            left: 150px;
+            position: absolute;
+            font-family: 'Century Gothic';
+            font-size: 60px;
+
+            margin-bottom: 10px;
+        }
+
+        h1, p {
+            color: aliceblue;
+            font-family: 'Century Gothic';
+            margin-top: 13%;
+            display: inline-block;
+            text-align: left; /* Ajuste para alinhar à esquerda */
+        }
+
+        h1 {
+            width: 43%;
+            margin-left: 7%;
+        }
+
+        p {
+            margin-left: 0%;
+            width: 38%;
+            margin-top: 15%;
+            position: absolute;
+        }
+
+        button {
+            background-color: rgb(219, 188, 64);
+            width: 180px;
+            border: none;
+            height: 40px;
+            top: 50%;
+            left: 8%;
+            position: absolute;
+            font-size: 25px;
+            color: rgb(41, 41, 41);
+
+            margin-bottom: 10px;
+        }
+
+        img{
+
+            position: absolute;
+            left: 71%;
+            z-index: 4;
+            top: 40%;
+
+        }
+ 
+        #botaoRolar {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            background-color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            left: 74%;
+            top: 85%;
+            z-index: 5;
+        }
+
+        #botaoRolar::before {
+            content: '\2193'; /* Código Unicode para a seta para baixo */
+            font-size: 24px;
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Seção de Informações do Cartório -->
+    <div class="local">
+        <h1>Endereço:</h1>
+        <p> Av. Des. Clotário Portugal, 421  <br> Centro, Campo Largo - PR, 83601-320</p>
+
+        <h1>Horário:</h1>
+        <p>Segunda a sexta 08:30 às 11:00 e 13:00 às 17:00</p>
+
+        <h1>E-mail:</h1>
+        <p>atendimento@cartoriocampolargo.com.br</p>
+
+        <h1>Telefone:</h1>
+        <p>(41) 3032-2675</p>
+    </div>
+
+    <!-- Seção do Vídeo -->
+    <div>
+        <h2>Assista como chegar ao<br> Cartório</h2>
+        <!-- Adicionei um link ao botão -->
+        <button id="botaoAssistir">Assistir agora</button>
+            <!-- Adicione um ID ao botão "Rolar para baixo" -->
+            <div id="botaoRolar" onclick="rolarParaBaixo()"></div>
+    </div>
+
+<div class="bloco">
+  <div class="cax"></div>
+
+  <img src="./g.png" alt="">
+    <!-- Adicione o vídeo usando a tag <video> -->
+        <!-- Adicione o vídeo usando a tag <video> -->
+            <video id="meuVideo" width="100%" controls>
+                <source src="./Registro de Imóveis de Campo Largo - Google Maps - Google Chrome 2023-12-05 09-52-36.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+
+    <script>
+        // Função para colocar o vídeo em tela cheia
+        function toggleFullScreen() {
+            var video = document.getElementById("meuVideo");
+
+            if (!document.fullscreenElement) {
+                video.requestFullscreen();
+            } else {
+                document.exitFullscreen();
+            }
+        }
+
+        // Adicionar um ouvinte de evento para o clique no botão
+        var botaoAssistir = document.getElementById("botaoAssistir");
+        botaoAssistir.addEventListener("click", toggleFullScreen);
+
+                // Função para rolar para o final da página
+                function rolarParaBaixo() {
+            window.scrollTo({
+                top: document.body.scrollHeight,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+
+</div>
+</body>
+</html>
