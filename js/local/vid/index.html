@@ -119,15 +119,15 @@
             right: 20px;
             width: 50px;
             height: 50px;
-            background-color: white;
+            background-color: rgb(219, 188, 64);
             border-radius: 50%;
             display: flex;
             justify-content: center;
             align-items: center;
             cursor: pointer;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            left: 74%;
-            top: 85%;
+            left: 7%;
+            top: 92%;
             z-index: 5;
         }
 
@@ -137,6 +137,18 @@
             color: black;
         }
 
+        .bo{
+
+            margin-top: 44%;
+            margin-left: 53%;
+            position: absolute;
+        }
+
+        #botaoInicio{
+
+            margin-top: 40% ;
+            left: 85%;
+        }
     </style>
 </head>
 <body>
@@ -154,7 +166,10 @@
 
         <h1>Telefone:</h1>
         <p>(41) 3032-2675</p>
+
     </div>
+
+    <h2 class="bo">Voltar ao menu inicial</h2>
 
     <!-- Seção do Vídeo -->
     <div>
@@ -163,6 +178,8 @@
         <button id="botaoAssistir">Assistir agora</button>
             <!-- Adicione um ID ao botão "Rolar para baixo" -->
             <div id="botaoRolar" onclick="rolarParaBaixo()"></div>
+
+            <button id="botaoInicio">início</button>
     </div>
 
 <div class="bloco">
@@ -189,6 +206,15 @@
             }
         }
 
+                // Função para redirecionar para a página de início
+            function irParaInicio() {
+            window.location.href = "../../../index.html";
+        }
+
+        // Adicionar um ouvinte de evento para o clique no botão "início"
+        var botaoInicio = document.getElementById("botaoInicio");
+        botaoInicio.addEventListener("click", irParaInicio);
+
         // Adicionar um ouvinte de evento para o clique no botão "Assistir agora"
         var botaoAssistir = document.getElementById("botaoAssistir");
         botaoAssistir.addEventListener("click", toggleFullScreen);
@@ -205,4 +231,3 @@
 </div>
 </body>
 </html>
-
