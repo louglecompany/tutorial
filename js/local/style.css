@@ -173,28 +173,32 @@
 
         top: 10%;
         margin-left:17%;
+        
     }
     
     .ab p{
 
         top: 10%;
-        left:11%;
+        left:8%;
         width: 99%;
+        text-align: center;
     }
 
     
     .ac p{
 
         top: 33%;
-        left:5%;
+        left:2%;
         width: 99%;
+        text-align: center;
     }
 
     
     .ad p{
 
         top: 55%;
-        left:5%;
+        left:2%;
+        text-align: center;
     }
 
 
@@ -202,6 +206,7 @@
 
         top: 78%;
         left:33%;
+        text-align: center;
     }
 
     
