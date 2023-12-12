@@ -138,3 +138,18 @@ document.addEventListener("DOMContentLoaded", function() {
         // Por exemplo, mostrar/ocultar elementos, adicionar classes, etc.
     });
 });
+
+        // Função para rolar para o final da página
+        function rolarParaBaixo() {
+            window.scrollTo({
+                top: document.body.scrollHeight,
+                behavior: 'smooth'
+            });
+        }
+
+        // Adicione um ouvinte de evento para o clique no botão de endereço
+        var botaoEndereco = document.getElementById("botaoEndereco");
+        botaoEndereco.addEventListener("click", function() {
+            // Redirecionar para a página "./local"
+            window.location.href = "./local";
+        });
