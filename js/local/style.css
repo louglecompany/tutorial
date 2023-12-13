@@ -12,14 +12,15 @@
 
     #localone {
         width: 92%;
-        height: 65vh;
+        height: 70vh;
         left: 4%;
         display: block;
         flex-direction: row;
         justify-content: center;
         text-align: center;
         align-items: center;
-
+        bottom: -76%;
+        position: absolute;
     }
 
 
@@ -28,7 +29,7 @@
     h1{
 
 
-        margin-bottom: 60px;
+        margin-bottom: 50px;
         font-size: 18px;
         text-align: center;       
 
@@ -36,81 +37,138 @@
 
     .ab h1{
 
-        top: 40%;
+        top: 44%;
         margin-left:15%;
     }
 
     
     .ac h1{
 
-        top: 21%;
+        top: 24%;
         margin-left:21%;
     }
 
     
     .ad h1{
 
-        top: 51%;
+        top: 55%;
         margin-left:23%;
     }
 
 
     .ae h1{
 
-        top: 10%;
+        top: 75%;
         margin-left:17%;
+        
     }
     
     .ab p{
 
         top: 10%;
-        left:8%;
+        left:1%;
         width: 99%;
+        text-align: center;
+
     }
 
     
     .ac p{
 
-        top: 33%;
-        left:4%;
+        top: 35%;
+        left:1%;
         width: 99%;
+        text-align: center;
+
     }
 
     
     .ad p{
 
-        top: 55%;
-        left:2%;
+        top: 57%;
+        left:3%;
+        text-align: center;
+
     }
 
 
     .ae p{
 
-        top: 78%;
+        top: 79%;
         left:30%;
+        text-align: center;
+
     }
 
-
-
-
+    
     /* CLASSE .BO *//* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 
-    .bloco{
+    .bloco .a{
 
-        display: none;
+        width: 60%;
+        height: 15vh;
+        top: 40%;
+        left: 15%;
     }
 
 
-    button{
-
-        display: none;
+    .bloco .cax{
         
+        margin-top: 55%;
+        margin-left: 5%;
+        width: 85%;
+        height: 30vh;
     }
 
-    h2{
-        display: none;
+    .bloco img{
+
+        left: 26%;
+        z-index: 4;
+        top: 34%;
+
     }
+
+
+    .fafa #botaoRolar {
+
+        top: 95%;
+    }
+
+    .fafa h2{
+
+        display: block;
+        font-size: 25px;
+        left: 30px;
+        top: 5%;
+    }
+
+    .fafa #botaoAssistir {
+        display: block;
+        width: 120px;
+        height: 25px;
+        top: 15%;
+        font-size: 18px;
+    }
+
+    .fafa #botaoInicio{
+        display: block;
+        width: 120px;
+        height: 25px;
+        font-size: 18px;
+        left: 7%;
+        top: 55%;
+    }
+
+    .bo {
+
+        font-size: 25px;
+        left: -45%;
+        top: 46%;
+
+
+    }
+    
 }
 
 @media only screen and (min-width: 200px) and (max-width: 400px) {
