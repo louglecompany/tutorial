@@ -186,7 +186,7 @@
     
     .ac p{
 
-        top: 33%;
+        top: 35%;
         left:1%;
         width: 99%;
         text-align: center;
@@ -196,7 +196,7 @@
     
     .ad p{
 
-        top: 55%;
+        top: 57%;
         left:3%;
         text-align: center;
 
@@ -205,7 +205,7 @@
 
     .ae p{
 
-        top: 78%;
+        top: 81%;
         left:30%;
         text-align: center;
 
@@ -236,7 +236,7 @@
 
         left: 26%;
         z-index: 4;
-        top: 32%;
+        top: 34%;
 
     }
 
@@ -268,7 +268,7 @@
         height: 25px;
         font-size: 18px;
         left: 7%;
-        top: 53%;
+        top: 51%;
     }
 
     .bo {
