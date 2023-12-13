@@ -12,7 +12,7 @@
 
     #localone {
         width: 92%;
-        height: 75vh;
+        height: 65vh;
         left: 4%;
         display: block;
         flex-direction: row;
@@ -101,9 +101,6 @@
         display: none;
     }
 
-    .fafa{
-        display: none;
-    }
 
     button{
 
@@ -133,9 +130,8 @@
         justify-content: center;
         text-align: center;
         align-items: center;
-        bottom: -64%;
-        positiion:absolute;
-
+        bottom: -68%;
+        position: absolute;
     }
 
 
@@ -144,7 +140,7 @@
     h1{
 
 
-        margin-bottom: 60px;
+        margin-bottom: 50px;
         font-size: 18px;
         text-align: center;       
 
@@ -173,7 +169,7 @@
 
     .ae h1{
 
-        top: 10%;
+        top: 0%;
         margin-left:17%;
         
     }
@@ -184,6 +180,7 @@
         left:1%;
         width: 99%;
         text-align: center;
+
     }
 
     
@@ -193,14 +190,16 @@
         left:1%;
         width: 99%;
         text-align: center;
+
     }
 
     
     .ad p{
 
         top: 55%;
-        left:7%;
+        left:3%;
         text-align: center;
+
     }
 
 
@@ -209,29 +208,77 @@
         top: 78%;
         left:30%;
         text-align: center;
+
     }
 
     
     /* CLASSE .BO *//* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 
-    .bloco{
+    .bloco .a{
 
-        display: none;
+        width: 60%;
+        height: 15vh;
+        top: 40%;
+        left: 15%;
     }
 
-    .fafa{
-        display: none;
-    }
 
-    button{
-
-        display: none;
+    .bloco .cax{
         
+        margin-top: 55%;
+        margin-left: 5%;
+        width: 85%;
+        height: 30vh;
     }
 
-    h2{
-        display: none;
+    .bloco img{
+
+        left: 26%;
+        z-index: 4;
+        top: 32%;
+
     }
+
+
+    .fafa #botaoRolar {
+
+        top: 88%;
+    }
+
+    .fafa h2{
+
+        display: block;
+        font-size: 25px;
+        left: 30px;
+        top: 5%;
+    }
+
+    .fafa #botaoAssistir {
+        display: block;
+        width: 120px;
+        height: 25px;
+        top: 18%;
+        font-size: 18px;
+    }
+
+    .fafa #botaoInicio{
+        display: block;
+        width: 120px;
+        height: 25px;
+        font-size: 18px;
+        left: 7%;
+        top: 50%;
+    }
+
+    .bo {
+
+        font-size: 25px;
+        left: -45%;
+        top: 40%;
+
+
+    }
+    
 
 }
