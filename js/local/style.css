@@ -227,7 +227,7 @@
 
     .ae h1{
 
-        top: 75%;
+        top: 76%;
         margin-left:17%;
         
     }
@@ -254,7 +254,7 @@
     
     .ad p{
 
-        top: 57%;
+        top: 55%;
         left:3%;
         text-align: center;
 
@@ -301,7 +301,7 @@
 
     .fafa #botaoRolar {
 
-        top: 95%;
+        top: 96%;
     }
 
     .fafa h2{
@@ -310,23 +310,28 @@
         font-size: 25px;
         left: 30px;
         top: 5%;
+        
     }
 
     .fafa #botaoAssistir {
+        
         display: block;
         width: 120px;
         height: 25px;
         top: 15%;
         font-size: 18px;
+        
     }
 
     .fafa #botaoInicio{
+        
         display: block;
         width: 120px;
         height: 25px;
         font-size: 18px;
         left: 7%;
         top: 55%;
+        
     }
 
     .bo {
@@ -334,7 +339,6 @@
         font-size: 25px;
         left: -45%;
         top: 46%;
-
 
     }
     
