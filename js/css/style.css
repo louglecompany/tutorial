@@ -150,7 +150,7 @@ h4{
     font-family:'Leelawadee UI Semilight';
     right: 2.5%;
     position: absolute;
-    top: -500px; /* Inicia o menu fora do campo visual */
+    top: -600px; /* Inicia o menu fora do campo visual */
     z-index: 2;
     transition: top 1s ease; /* Adiciona uma transição suave para a propriedade 'top' */
 
