@@ -684,8 +684,8 @@ h4{
     .aviso{
 
         display:block;
-        top:0;
-        margin-left:20%;
+        top:50%;
+        margin-left:10%;
         position:absolute;
         z-index:999;
             
@@ -693,7 +693,7 @@ h4{
 
     .aviso, h2{
         
-       font-size:20px;
+       font-size:15px;
        color: white;
        font-family: 'Nunito Sans', sans-serif;
 
