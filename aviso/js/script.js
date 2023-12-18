@@ -8,5 +8,5 @@
                 document.body.style.opacity = 1;
             });
         } else {
-            window.location.href = "../index.html"; // Substitua pelo caminho da sua página de não permitido
+            window.location.href = "https://www.youtube.com/"; // Substitua pelo caminho da sua página de não permitido
         }
