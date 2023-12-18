@@ -670,7 +670,7 @@ h4{
     .botoes{
 
         margin-left:20%
-        z-index:2;
+        z-index:1;
 
     }
 
@@ -685,16 +685,16 @@ h4{
 
         display:block;
         top:0;
-        margin-left:50%;
+        margin-left:20%;
         position:absolute;
         z-index:999;
             
-        }
+    }
 
     .aviso, h2{
         
        font-size:20px;
-       color:write;
+       color: white;
        font-family: 'Nunito Sans', sans-serif;
 
     }
@@ -709,6 +709,7 @@ h4{
     .botoes button{
 
         padding: 8px 20px;
+        z-index:1;
     }
 
     h4 {
