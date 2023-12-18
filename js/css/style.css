@@ -399,6 +399,10 @@ h4{
         background-color: black;
     }
 
+    .aviso{
+
+        display:block;
+    }
     .direita.visivel {
         text-align: right;
     }
@@ -575,6 +579,10 @@ h4{
 
     }
 
+        .aviso{
+
+        display:block;
+    }
     
     .botoes button{
 
@@ -661,6 +669,11 @@ h4{
     align-items: center;
    }
 
+        .aviso{
+
+        display:block;
+    }
+    
     .botoes button{
 
         padding: 8px 20px;
