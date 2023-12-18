@@ -684,14 +684,17 @@ h4{
 
         display:block;
         top:0;
-        left:50%;
+        margin-left:50%;
         position:absolute;
+        z-index:999;
             
         }
 
     .aviso, h2{
         
        font-size:20px;
+       color:write;
+       font-family: 'Nunito Sans', sans-serif;
 
     }
 
