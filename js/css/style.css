@@ -579,7 +579,7 @@ h4{
 
     }
 
-        .aviso{
+    .aviso{
 
         display:block;
         font-size:20px;
@@ -680,10 +680,27 @@ h4{
     align-items: center;
    }
 
-        .aviso{
+    .aviso{
 
         display:block;
+        top:0;
+        left:50%;
+        position:absolute;
+            
+        }
+
+    .aviso, h2{
+        
+       font-size:20px;
+
     }
+
+    .aviso, body{
+
+        width:100%
+        heigth:100vh;
+        background-color:#333;
+}
     
     .botoes button{
 
