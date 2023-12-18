@@ -399,10 +399,7 @@ h4{
         background-color: black;
     }
 
-    .aviso{
 
-        display:block;
-    }
     .direita.visivel {
         text-align: right;
     }
@@ -588,13 +585,7 @@ h4{
             
         }
 
-    .aviso, body{
 
-        width:100%
-        heigth:100vh;
-        background-color:#333;
-}
-    
     .botoes button{
 
         padding: 8px 20px;
@@ -681,32 +672,7 @@ h4{
     align-items: center;
    }
 
-    .aviso{
 
-        display:block;
-        top:50%;
-        margin-left:10%;
-        position:absolute;
-        z-index:999;
-            
-    }
-
-    .aviso, h2{
-        
-       font-size:15px;
-       color: white;
-       font-family: 'Nunito Sans', sans-serif;
-
-    }
-
-    .aviso, body{
-
-        width:100%
-        heigth:100vh;
-        background-color:#333;
-        z-index:999;
-}
-    
     .botoes button{
 
         padding: 8px 20px;
