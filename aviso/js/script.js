@@ -8,5 +8,5 @@
                 document.body.style.opacity = 1;
             });
         } else {
-            window.location.href = "./pagina-nao-permitida.html"; // Substitua pelo caminho da sua página de não permitido
+            window.location.href = "../index.html"; // Substitua pelo caminho da sua página de não permitido
         }
