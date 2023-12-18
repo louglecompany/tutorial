@@ -45,6 +45,10 @@ animation: fadeIn 2s ease;
 
 }
 
+.aviso{
+display:none;
+}
+
 @keyframes fadeIn {
 from {
 opacity: 0;
