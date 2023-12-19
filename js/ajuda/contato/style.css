@@ -25,12 +25,12 @@ h2, h3 {
     font-size: 1.5em;
     margin: 10px 0;
     text-align: left;
-    margin-left: 27%;
-    margin-bottom: 50px;
+    margin-left: 34%;
+    margin-bottom: 30px;
     padding: 10px; /* Adiciona espaço interno à caixa */
     background-color: transparent;
     border: 1px solid rgb(42, 42, 42); /* Largura e estilo da borda */
-    width: 47%;
+    width: 30%;
     font-family: 'Century Gothic';
 }
 
@@ -64,7 +64,7 @@ button:hover {
 
     h1{
 
-        font-size: 1.8em;
+        font-size: 2em;
     }
 
     h3{
@@ -96,9 +96,6 @@ button:hover {
 
         margin-left: 36%;
 
-    }
-    h1{
-        font-size: 1.5em;
     }
 
 }
